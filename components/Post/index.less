@@ -1,0 +1,66 @@
+.c-post{
+  padding: 23px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+
+  .post-author{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 100, 123, 0.8);
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  .user-wrap{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .post-title{
+    font-size: 30px;
+    margin-top: 25px;
+  }
+  .post-content{
+    margin-top: 10px;
+    color: rgba(0,0,0,.84);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 1.58;
+    letter-spacing: -.003em;
+    max-height: 100px;
+    overflow: hidden;
+    transition: all .8s ease-out;
+
+    &.showall{
+      max-height: 9999px;
+      transition: all .8s ease-in;
+    }
+  }
+  .btn-toggle-all{
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  .btn-delete{
+    cursor: pointer;
+  }
+  .opt-box{
+    position: relative;
+
+    .btn-delete,
+    .c-post-editor{
+      font-size: 18px;
+      position: absolute;
+      top: 1px;
+      left: 30px;
+    }
+    .c-post-editor{
+      top: -3px;
+    }
+    .btn-delete{
+      left: 60px;
+    }
+  }
+}
