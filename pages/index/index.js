@@ -10,8 +10,6 @@ import SignUp from '../../components/SignUp';
 
 import './index.less';
 
-// todo::设置昵称
-
 const blogAddress = util.getUrlParam('address'); // 当前博客的地址，没有就是所有博客
 
 class App extends React.Component {
