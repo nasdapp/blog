@@ -59,7 +59,7 @@ class CommentList extends React.Component {
 
     return (
       <div className="c-comment-list">
-        <img title="评论" className="btn-more-comments" onClick={this.toggleShowMore} src="../../img/comments.png" />
+        <img title="评论" className="btn-more-comments" onClick={this.toggleShowMore} src="./img/comments.png" />
         {
           showMore && <div className="comment-more">
             <CommentEditor postId={postId} onSuccess={this.getCommentList} />
