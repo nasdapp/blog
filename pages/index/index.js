@@ -12,6 +12,10 @@ import './index.less';
 
 const blogAddress = util.getUrlParam('address'); // 当前博客的地址，没有就是所有博客
 
+// todo::
+// 管理员删除评论
+// 文章长度
+
 class App extends React.Component {
   constructor(props) {
     super(props);
