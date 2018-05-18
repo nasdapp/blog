@@ -63,7 +63,7 @@ class App extends React.Component {
       <div className="page-index">
         <WalletTip />
         <SignUp />
-        <h1 className="blog-title">NasBlog！</h1>
+        <h1 className="blog-title">NasBlog</h1>
         { showEditor && <PostEditor className="btn-show-post-writer" onSuccess={this.getAllPosts} /> }
         { loading && <div className="loading-wrap"><Icon type="loading" /></div> }
         {
