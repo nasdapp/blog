@@ -33,7 +33,7 @@ class Layout extends React.Component {
 
         blog.getNickName({
           success: (res) => {
-            window.nickName = res;
+            window._nickName = res;
             ctx.setState({});
           }
         });

@@ -39,7 +39,7 @@ class SignUp extends React.Component {
       nickname: nickName,
       success: (res) => {
         ctx.close();
-        window.nickName = nickName;
+        window._nickName = nickName;
       }
     });
   }
@@ -60,12 +60,13 @@ class SignUp extends React.Component {
     const { visible } = this.state;
     const { form } = this.props;
     const { getFieldDecorator } = form;
+    console.log(window._nickName, 668)
 
     return (
       <div className="c-signup">
         {
-          window.nickName ? 
-            <a href={`?address=${window.account}`} title={`查看我的文章`}>{window.nickName}</a> : 
+          window._nickName ? 
+            <a href={`?address=${window.account}`} title={`查看我的文章`}>{window._nickName}</a> : 
             <a href="javascript:;" onClick={this.show}>注册</a>
         }
 
